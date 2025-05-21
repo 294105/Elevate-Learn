@@ -15,6 +15,7 @@ export class CreateCourseComponent {
   title = '';
   description = '';
   category = '';
+  toc = '';
   thumbnail: File | null = null;
   isPublished = false;
 
@@ -29,6 +30,7 @@ export class CreateCourseComponent {
     formData.append('title', this.title);
     formData.append('description', this.description);
     formData.append('category', this.category);
+    formData.append('toc', this.toc);
     formData.append('isPublished', this.isPublished ? 'true' : 'false');
     if (this.thumbnail) {
       formData.append('thumbnail', this.thumbnail);

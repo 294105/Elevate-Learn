@@ -53,6 +53,20 @@
           </div>
         </div>
         <div>
+          <label for="toc" class="block text-sm font-medium text-gray-700 mb-2">Table of Contents (TOC)</label>
+          <div class="mt-1">
+            <textarea
+              id="toc"
+              [(ngModel)]="toc"
+              name="toc"
+              rows="4"
+              
+              class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md py-2 px-3"
+            ></textarea>
+          </div>
+        </div>
+        
+        <div>
           <label for="thumbnail" class="block text-sm font-medium text-gray-700 mb-2">Thumbnail</label>
           <div class="mt-1">
             <input
